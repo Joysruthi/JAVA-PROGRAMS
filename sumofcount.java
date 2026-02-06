@@ -1,14 +1,15 @@
 import java.util.*;
-public class count {
+public class sumofcount {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number:");
-        int num=sc.nextInt();int count=0;
+        int num=sc.nextInt();
+        int sum=0;
         while(num!=0){
             int digit=num%10;
-            count++;
+            sum=sum+digit;
             num=num/10;
         }
-        System.out.println(count);
+        System.out.println("Sum of digit:"+sum);
     }
 }
